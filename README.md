@@ -12,4 +12,5 @@ It's simple, really. Just type into your shell:
 `$ gcc main.c -o main`
 
 and you're set. To run the program, type:
+
 `$ ./main`
