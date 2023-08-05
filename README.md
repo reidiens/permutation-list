@@ -14,3 +14,6 @@ It's simple, really. Just type into your shell:
 and you're set. To run the program, type:
 
 `$ ./main`
+
+The first argument to the program is the number of elements that should be in the array. So, `./main 6` would permute a 6-element array.
+Running without any arguments will simply ask you how many elements you wish to permute.
