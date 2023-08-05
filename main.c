@@ -78,7 +78,7 @@ int init_arr(arr_t *a) {
 
 	CYCLE_ARR {
 		if ((a->arr[i] == '\0') && (i < a->arrSize)) {
-			return 0; // 0 = error for formatting purposes (see line 35)
+			return 0; // 0 = error for formatting purposes (see line 40)
 		}
 	}
 	return 1;
