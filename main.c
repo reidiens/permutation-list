@@ -16,13 +16,13 @@ void parr(arr_t *a);
 void swap(int *e1, int *e2);
 void permute(arr_t *a, int arrs);
 long long factorial(int *arrSize);
-int scan_argc(char **argC, int *arrSize);
+int scan_argv(char **argV, int *arrSize);
 
-int main(int argV, char *argC[]) {
+int main(int argC, char *argV[]) {
 	arr_t a;
 
-	if (argC[1] != NULL) {
-		if (scan_argc(argC, &a.arrSize) == 1) {
+	if (argV[1] != NULL) {
+		if (scan_argv(argV, &a.arrSize) == 1) {
 			;
 		}
 	}
@@ -117,7 +117,7 @@ long long factorial(int *arrSize) {
 	return res;
 }
 
-int scan_argc(char **argC, int *arrSize) {
-	int res = sscanf(argC[1], "%d", arrSize);
+int scan_argv(char **argV, int *arrSize) {
+	int res = sscanf(argV[1], "%d", arrSize);
 	return res;
 }
