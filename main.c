@@ -32,7 +32,12 @@ int main(int argC, char *argV[]) {
 		gint(&a.arrSize);
 	}
 
-	if (!init_arr(&a)) {
+	if (a.arrSize == 1) {
+		puts("there is only one permutation for a one element array. get real.");
+		return 0;
+	}
+
+	else if (!init_arr(&a)) {
 		fprintf(stderr, "array init error\n");
 		free(a.arr);
 		return 1;
